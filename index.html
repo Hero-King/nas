@@ -33,7 +33,7 @@
     const nativeUrl = 'https://nas.heroking.top:5001/'
     const openUrl = 'https://nas.heroking.top:8000/'
 
-    Promise.any([loadImage(nativeUrl + 'webman/favicon.ico'), loadImage(openUrl + 'webman/favicon.ico')]).then(img => {
+    Promise.any([loadImage(nativeUrl + 'favicon.ico'), loadImage(openUrl + 'favicon.ico')]).then(img => {
       createIFrame(new URL(img.src).origin)
     })
 
